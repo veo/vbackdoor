@@ -1,7 +1,7 @@
 # vbackdoor
 [中文](https://github.com/veo/vbackdoor/blob/main/README_cn.md)
 
-Hide a process,port,self under Linux using the linux LD_PRELOAD rootkit.
+Hide a process,port,self under Linux using the LD_PRELOAD rootkit.
 
 ### compile the library
 
