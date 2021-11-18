@@ -42,7 +42,7 @@ or
 
 use busybox
 ```
-rm -rf /etc/ld.so.preload
+busybox rm -rf /etc/ld.so.preload
 ```
 
   * Process hiding
