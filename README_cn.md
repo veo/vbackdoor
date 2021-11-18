@@ -38,7 +38,7 @@ vi /etc/ld.so.preload
 使用busybox
 
 ```
-rm -rf /etc/ld.so.preload
+busybox rm -rf /etc/ld.so.preload
 ```
 
   * 进程隐藏
